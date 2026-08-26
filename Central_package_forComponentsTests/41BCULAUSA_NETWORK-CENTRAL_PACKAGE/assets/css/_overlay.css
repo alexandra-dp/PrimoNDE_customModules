@@ -1,0 +1,70 @@
+/* ============================================================
+   OVERLAYS — CDK overlay content: menus, select panels,
+   language menu, login dialog, signed-in details, request forms.
+   ============================================================ */
+/* OVERLAY CONFIG */
+/* overlay menus background color */
+.cdk-overlay-container .cdk-overlay-pane .mat-mdc-menu-panel,
+.cdk-overlay-container .cdk-overlay-pane .mat-mdc-select-panel {
+    background-color: #fff !important;
+    border: 1px solid var(--sys-primary) !important;
+}
+
+/* overlay language menu selected color */
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled):not(.mat-mdc-option-multiple) {
+    background-color: var(--sys-primary) !important;
+}
+
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    color: #fff !important;
+    font-weight: var(--font-weight-semibold);
+}
+
+/* login overlay background and border color */
+.cdk-overlay-container mat-dialog-container .mat-mdc-dialog-surface:not(.mat-mdc-dialog-surface:has(nde-progress-spinner-dialog)) {
+    background-color: #fff !important;
+    border: 1px solid var(--sys-primary);
+}
+
+.cdk-overlay-container mat-dialog-container .mat-mdc-dialog-surface nde-login-dialog nde-login-form-content mat-dialog-actions .close-dialog-btn span::before {
+    background-color: var(--color-beige-clair);
+    opacity: 0.3 !important;
+}
+
+.cdk-overlay-container mat-dialog-container .mat-mdc-dialog-surface nde-login-dialog nde-login-form-content .authentication-method-btn {
+    border: 1px solid var(--color-beige-fonce) !important;
+}
+
+/* signed-in user overlay colors */
+.cdk-overlay-container .signed-in-user-details {
+    background-color: var(--sys-primary) !important;
+}
+
+.cdk-overlay-container .signed-in-user-details .signed-in-as,
+.cdk-overlay-container .signed-in-user-details .signed-in-user-name {
+    color: #fff;
+}
+
+.cdk-overlay-container .signed-in-user-details .signed-in-user-name {
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Requests forms overlay size */
+.cdk-overlay-container .cdk-overlay-pane.mat-mdc-dialog-panel:has(nde-request-form) {
+    min-width: 40vw !important;
+    max-width: 40vw !important;
+}
+
+@media screen and (max-width: 992px) {
+    .cdk-overlay-container .cdk-overlay-pane.mat-mdc-dialog-panel:has(nde-request-form) {
+        min-width: 80vw !important;
+        max-width: 80vw !important;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .cdk-overlay-container .cdk-overlay-pane.mat-mdc-dialog-panel:has(nde-request-form) {
+        min-width: 90vw !important;
+        max-width: 90vw !important;
+    }
+}

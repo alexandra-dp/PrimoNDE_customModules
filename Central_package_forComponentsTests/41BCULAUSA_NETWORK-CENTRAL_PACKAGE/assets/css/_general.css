@@ -1,0 +1,45 @@
+/* ============================================================
+   GENERAL — Site-wide rules: global font, links, dividers,
+   back-to-top & report-a-problem floating buttons.
+   ============================================================ */
+/* GENERAL CONFIG */
+/* Font */
+body, main, p, h1, h2, h3, h4, h5, span, div, button, a {
+    font-family: 'inclusivesansreg' !important;
+}
+
+/* Links — underline on text links only, not buttons (Angular Material overrides removed) */
+a {
+    text-decoration: underline !important;
+}
+
+/* Dividers */
+mat-divider {
+    border-color: var(--color-beige-fonce) !important;
+}
+
+/* Back-to-top and Contact Library button */
+nde-back-to-top .back-to-top-button,
+nde-report-a-problem .report-a-problem-button {
+    height: 60px !important;
+    width: 60px !important;
+}
+
+nde-back-to-top .back-to-top-button mat-icon,
+nde-report-a-problem .report-a-problem-button mat-icon {
+    height: 30px !important;
+    width: 30px !important;
+}
+
+/* ── Sticky footer ──────────────────────────────────────────── */
+/* Structure Primo : nde-footer est à l'intérieur de main.sub-container.
+   On donne à ce conteneur une hauteur minimale de (100vh - 80px header),
+   et le footer est poussé en bas par margin-top: auto.        */
+main.sub-container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+}
+nde-footer {
+    margin-top: auto;
+}

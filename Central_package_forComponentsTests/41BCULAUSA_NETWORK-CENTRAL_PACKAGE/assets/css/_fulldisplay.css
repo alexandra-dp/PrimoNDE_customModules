@@ -1,0 +1,205 @@
+/* ============================================================
+   FULL DISPLAY — Record full view: View It & locations tiles,
+   requests, Rapido offers, browse shelf.
+   ============================================================ */
+/* FULL DISPLAY PAGE CONFIG */
+
+/* Hide full-view-right-content */
+nde-full-display-container .full-view-right-content {
+    display: none;
+}
+
+/* Brief display - Record title */
+nde-full-display-container nde-search-result-item-container .brief-result-container nde-record-title h3 a span {
+    font-weight: var(--font-weight-semibold);
+}
+
+/* View It and Location tile config */
+/* background and border color */
+nde-full-display-service-container nde-view-it nde-view-it-card .view-it-card-container,
+nde-locations-container nde-location .getit-location-card {
+    background-color: #fff !important;
+    border: var(--border-card);
+}
+
+nde-locations-container nde-location nde-location-items-container .not-grouped-by-library {
+    border-color: var(--color-beige-fonce) !important;
+}
+
+nde-locations-container nde-location nde-location-items-container .getit-location-items-filter-bar {
+    background-color: var(--color-beige-clair-30) !important;
+}
+
+nde-locations-container nde-location nde-location-items-container nde-location-item .even-location-item-card {
+    background-color: rgba(var(--color-beige-clair-rgb), 0.15) !important;
+}
+
+/* availability and call number color and weight */
+nde-locations-container nde-location .location-brief-properties-container span {
+    padding: 5px;
+}
+
+nde-locations-container nde-location .location-brief-properties-container .getit-location-available,
+nde-locations-container nde-location .location-brief-properties-container .getit-location-unavailable {
+    border-radius: var(--radius-pill);
+    width: fit-content;
+}
+
+nde-locations-container nde-location .location-brief-properties-container .getit-location-available {
+    background-color: var(--color-available-bg);
+}
+nde-locations-container nde-location .location-brief-properties-container .getit-location-unavailable {
+    background-color: var(--color-unavailable-bg);
+}
+
+nde-locations-container nde-location .location-brief-properties-container .getit-location-available,
+nde-locations-container nde-location .location-brief-properties-container .getit-location-unavailable,
+nde-locations-container nde-location .location-brief-properties-container span[data-qa="location-call-number"] {
+    font-weight: var(--font-weight-semibold);
+}
+
+nde-locations-container nde-location .location-brief-properties-container span[data-qa="location-call-number"] {
+    color: var(--color-rose-rnv);
+}
+
+/* call number prefix */
+nde-locations-container nde-location .location-brief-properties-container span[data-qa="location-call-number"]::before {
+    content: "Cote : ";
+    color: #000;
+    font-style: italic;
+    font-weight: var(--font-weight-semibold);
+}
+
+/* text alignment */
+nde-locations-container nde-location nde-location-items-container nde-location-item .getit-items-brief-property:not(:first-of-type) {
+    text-align: end;
+    font-style: italic;
+}
+
+nde-locations-container nde-location nde-location-items-container nde-location-item .getit-items-full-properties-container {
+    padding-left: 24px !important;
+}
+
+nde-locations-container nde-location nde-location-items-container nde-location-item .mat-expansion-panel-header {
+    padding: 10px 24px !important;
+}
+
+nde-locations-container nde-location nde-location-items-container nde-location-item .mat-expansion-panel-body {
+    padding-bottom: 0 !important;
+}
+
+nde-full-display-service-container nde-view-it nde-view-it-card .view-it-card-container button{
+    padding-left: 0 !important;
+    color: var(--sys-primary)
+}
+
+/* view it ePF note */
+nde-full-display-service-container nde-view-it nde-view-it-card .restricted-public-note {
+    text-decoration: none !important;
+    font-size: var(--font-size-base) !important;
+    font-weight: var(--font-weight-semibold) !important;
+    padding: 15px !important;
+}
+
+/* Requests button config */
+/* Color and size */
+nde-get-it nde-locations-container nde-location nde-location-items-requests button,
+nde-get-it nde-locations-container nde-location nde-location-items-container nde-location-item button[data-qa="AlmaItemRequest"] {
+    background-color: var(--sys-primary) !important;
+    color: #fff !important;
+    width: var(--btn-width);
+}
+
+/* alignement */
+nde-get-it nde-locations-container nde-location nde-location-items-requests div {
+    margin: 16px 0 0 0 !important;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* Request volume button config */
+/* size */
+nde-get-it nde-locations-container nde-location nde-location-items-requests button[data-qa="alma-request-button-AlmaRequestOther"] {
+    width: auto;
+}
+
+/* Get-it-from-other config */
+nde-get-it-from-other nde-get-it-other-institution .getit-library-card {
+    background-color: #fff !important;
+}
+
+nde-get-it-from-other nde-get-it-other-institution .getit-library-card,
+nde-get-it-from-other nde-get-it-other-institution nde-locations-container .getit-location-card {
+    border: var(--border-card);
+}
+
+nde-get-it-from-other nde-get-it-other-institution nde-locations-container .getit-location-card .other-location-available {
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Requests tile config and font size */
+/* Login bar background color */
+nde-full-display-service-container nde-requests nde-notification .notification-container {
+    background-color: var(--color-beige-clair-50);
+}
+
+nde-full-display-service-container nde-requests nde-notification .notification-container #notifText,
+nde-full-display-service-container nde-requests nde-notification .notification-container nde-login button,
+nde-full-display-service-container nde-requests nde-notification .notification-container nde-login div a {
+    font-size: var(--font-size-base) !important;
+}
+
+/* Rapido bar background color */
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location nde-ngrs-no-offer-message .nde-ngrs-no-offer-message-main-tile {
+    background-color: rgba(var(--color-beige-clair-rgb), 0.2) !important;
+}
+
+/* Request card background and border color */
+nde-full-display-service-container nde-requests nde-request-card .request-card {
+    border: var(--border-card);
+    background-color: rgba(var(--color-beige-clair-rgb), 0.15);
+}
+
+/* Rapido card background and border color */
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location .nde-ngrs-get-it-other-location-one-offer {
+    border: solid 1px rgba(var(--color-beige-fonce-rgb), 0.5);
+    background-color: rgba(var(--color-beige-clair-rgb), 0.1) !important;
+}
+
+/* Rapido card text font size */
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location .nde-ngrs-get-it-other-location-one-offer nde-ngrs-offer nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-text-container,
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location .nde-ngrs-get-it-other-location-one-offer nde-ngrs-offer nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-text-container .nde-ngrs-offer-drawer-dark-text {
+    font-size: var(--font-size-sm) !important;
+    line-height: unset;
+}
+
+/* Rapido card padding */
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location .nde-ngrs-get-it-other-location-one-offer nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-offer-container-one-offer-style {
+    padding: 16px 0 16px 16px;
+}
+
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location .nde-ngrs-get-it-other-location-one-offer nde-ngrs-offer-drawer button,
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location .nde-ngrs-get-it-other-location-one-offer nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-offer-container-one-offer-style .nde-ngrs-offer-drawer-content-container {
+    margin: 0 !important;
+}
+
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location .nde-ngrs-get-it-other-location-one-offer nde-ngrs-offer-drawer button {
+    align-self: center !important;
+    justify-self: center !important;
+}
+
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location .nde-ngrs-get-it-other-location-one-offer a {
+    color: var(--sys-primary);
+}
+
+/* Browseshelf config */
+/* border color */
+nde-full-display-service-container nde-virtual-browse nde-carousel cdk-virtual-scroll-viewport nde-virtual-browse-card mat-card:not(.focused) {
+    border-color: var(--color-beige-fonce);
+}
+
+/* links color */
+nde-full-display-service-container nde-virtual-browse nde-carousel cdk-virtual-scroll-viewport a {
+    color: var(--sys-primary);
+}

@@ -1,0 +1,30 @@
+/* ============================================================
+   MAIN MENU — Header bar: logo, height, centered nav menu.
+   ============================================================ */
+/* NDE-MAIN-MENU CONFIG */
+/* Logo */
+nde-logo a img {
+    margin-top: 5px;
+    height: 40px;
+}
+
+/* menu height */
+header {
+    height: 80px;
+}
+.header-container {
+    height: 100%;
+}
+
+/* Center menu */
+nde-main-menu nav .main-menu-container.horizontal-menu {
+    justify-content: center;
+}
+
+/* Suppress uppercase titles + font size */
+nde-main-menu nav .main-menu-container ul li .main-menu-label .mdc-button__label .ng-star-inserted,
+nde-main-menu-dialog .show-more-main-menu-out-inner-wrapper ul li .main-menu-modal-btn .mat-title-small,
+nde-main-menu nav .main-menu-container ul li .show-more-btn .mdc-button__label {
+    text-transform: none;
+    font-size: var(--font-size-base);
+}

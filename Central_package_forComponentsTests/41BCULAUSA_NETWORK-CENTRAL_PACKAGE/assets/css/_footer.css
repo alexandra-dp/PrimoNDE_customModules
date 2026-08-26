@@ -1,0 +1,42 @@
+/* ============================================================
+   FOOTER — Page footer: layout, link colors, logo sizing.
+   ============================================================ */
+/* FOOTER CONFIG */
+footer {
+    padding: 80px;
+    background-color: var(--sys-primary);
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul:before{
+    content:attr(footer-title);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer div ul li {
+    margin-bottom: 10px;
+}
+
+footer div ul li a {
+    color: #fff !important;
+}
+
+footer div ul li img {
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.copyright p {
+    color : #fff;
+    text-align:right;
+}

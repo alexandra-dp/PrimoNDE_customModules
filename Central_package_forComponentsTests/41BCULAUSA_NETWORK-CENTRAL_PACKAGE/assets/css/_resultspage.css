@@ -1,0 +1,57 @@
+/* ============================================================
+   RESULTS PAGE — Resource-type bar, selected-filters bar,
+   Rapido bar, results container, pagination, no-results.
+   ============================================================ */
+/* RESULTS PAGES CONFIG */
+/* Resource type bar config */
+/* Arrow color */
+nde-search-results-resource-type-bar .menu-button mat-icon svg {
+    fill: var(--sys-outline) !important;
+}
+
+nde-search-results-resource-type-bar .menu-button:hover  mat-icon svg {
+    fill: var(--sys-primary) !important;
+}
+
+/* Filters bar config */
+/* selected filter button color */
+nde-search-bar-filters nde-selected-filters-container nde-selected-filters button {
+    background-color: var(--color-beige-clair-30);
+    color: var(--sys-primary);
+}
+
+/* Rapido bar config */
+/* rapido bar backgroung color */
+nde-rapido-links .nde-rapido-links-main-content {
+    background-color: var(--color-beige-clair-10) !important;
+}
+
+/* Results container */
+/* background and border color */
+nde-search-results-top-bar #resultsTopBarContainer {
+    background-color: var(--color-beige-clair-30);
+}
+
+nde-search-results-top-bar #resultsTopBarContainer,
+nde-search-results #searchResults {
+    border-color: var(--color-beige-fonce);
+}
+
+nde-search-results nde-search-result-item-container .record-number {
+    background-color: var(--color-beige-clair-30) !important;
+}
+
+/* Facets Menu */
+nde-search-filters-side-nav .side-nav-filters-actions {
+    padding: 1rem 0 !important;
+}
+
+/* Pagination search results */
+nde-search-results-pagination nav .pagination-container {
+    border-color: var(--color-beige-fonce) !important;
+}
+
+/* No Results page config */
+nde-search-results nde-search-no-results .no-results {
+    flex-wrap: wrap;
+}

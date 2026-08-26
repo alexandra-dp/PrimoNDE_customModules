@@ -1,0 +1,14 @@
+/* ELP CUSTOM PACKAGE CONFIG */
+/* GENERAL CONFIG */
+/* Search bar size and background image */
+/*--- .custom-search-bar-container {
+        height: 50vh !important;
+} ---*/ 
+
+/* Thumbnails */
+nde-record-image .record-thumbnail {
+        width: 80px !important;
+}
+nde-record-type .record-type {
+        margin-left: 8px;
+}

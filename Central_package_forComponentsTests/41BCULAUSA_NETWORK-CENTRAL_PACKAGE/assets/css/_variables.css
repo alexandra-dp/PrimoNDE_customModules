@@ -1,0 +1,63 @@
+/* ============================================================
+   VARIABLES & TOKENS — Single source of truth for the theme.
+   Colors, borders, radius, sizing, typography + @font-face.
+   Always reuse these tokens instead of hardcoding values.
+   ============================================================ */
+
+/* Color */
+:root {
+    --color-rose-rnv: #C40049;
+    --color-beige-clair: #CAB69D;
+    /* RGB components of --color-beige-clair, for use with rgba() transparency */
+    --color-beige-clair-rgb: 202, 182, 157;
+    --color-beige-clair-50: rgba(202, 182, 157, 0.5); /* fond login / notifications */
+    --color-beige-clair-30: #eee9e2;
+    --color-beige-clair-10: #faf8f5;
+    /* Slightly darkened beige used for section header backgrounds */
+    --color-section-header-bg: #EFE8E1;
+    --color-beige-fonce: #A98E7E;
+    --color-available: #368704;
+    --color-available-bg: #d5ffbf;
+    /* WCAG AA: keep dark enough for 4.5:1 contrast on --color-unavailable-bg (do not lighten) */
+    --color-unavailable: #5c5c5c;
+    --color-unavailable-bg: #e0e0e0;
+    /* Open Access indicator */
+    --color-open-access: #f68212;
+
+    /* Text colors */
+    --color-text: #1a1a1a;          /* corps de texte principal */
+    --color-text-muted: #666;       /* texte secondaire / descriptions */
+    /* RGB components of --color-beige-fonce, for use with rgba() transparency */
+    --color-beige-fonce-rgb: 169, 142, 126;
+
+    /* Borders */
+    --border-card: solid 2px var(--color-beige-fonce);
+    --border-card-light: 1px solid var(--color-beige-clair); /* cartes homepage */
+
+    /* Radius */
+    --radius-pill: 1.5rem;   /* availability pills */
+    --radius-scope: 2.5rem;  /* search scope dropdown */
+    --radius-card: 1rem;     /* cartes homepage */
+
+    /* Sizing */
+    --btn-width: 10.25rem;   /* request / load-more buttons */
+    --width-content: clamp(1088px, 85%, 1368px); /* largeur commune searchbar / homepage */
+
+    /* Shadows */
+    --shadow-card: 0 1px 6px rgba(0, 0, 0, .07); /* ombre hover des cartes homepage */
+
+    /* Typography */
+    --font-weight-semibold: 600;
+    --font-size-sm:   .85rem;   /* détails fins, Rapido, boutons */
+    --font-size-base: 1rem;     /* texte courant (menus, descriptions, notices) */
+    --font-size-xl:   1.25rem;  /* titres de section */
+}
+
+/* Font */
+@font-face {
+    font-family: 'inclusivesansreg';
+    src:
+        url("fonts/InclusiveSans-VariableFont_wght.ttf") format("TrueType");
+    font-style: normal;
+    font-display: swap;
+}

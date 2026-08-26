@@ -1,0 +1,424 @@
+/* COLOR LIST
+Rose RNV : #C40049
+Rose foncé : #910035
+Orange : #E58B22
+Vert clair : #0AC481
+Vert "Primo BO" : #187474
+Beige clair : #CAB69D
+Beige foncé : #A98E7E
+Bleu clair : #14A2C4
+Bleu foncé : #066278
+*/
+
+/* GENERAL CONFIG */
+
+/* Links */
+a,
+button {
+    text-decoration: underline !important;
+}
+
+/* Dividers */
+mat-divider {
+    border-color: #a98e7e !important;
+}
+
+/* Thumbnais */
+nde-record-image .record-thumbnail {
+    width: 80px !important;
+}
+
+/* Brief display */
+nde-record-title {
+    padding: 5px;
+}
+
+nde-record-title h3 a nde-highlight span {
+    font-size: 18px !important;
+}
+
+nde-record-main-details {
+    margin: 10px 0;
+}
+
+nde-record-summary {
+    margin-bottom: 10px;
+}
+
+nde-record-type .record-type {
+    margin-left: 8px;
+}
+
+/* Back-to-top and Contact Library button */
+nde-back-to-top .back-to-top-button,
+nde-report-a-problem .report-a-problem-button {
+    height: 60px !important;
+    width: 60px !important;
+}
+
+nde-back-to-top .back-to-top-button mat-icon,
+nde-report-a-problem .report-a-problem-button mat-icon {
+    height: 30px !important;
+    width: 30px !important;
+}
+
+/* END GENERAL CONFIG */
+
+/* NDE-MAIN-MENU CONFIG */
+
+/* Logo margin */
+nde-logo a img {
+   margin-top: 5px;
+}
+
+/* Center menu */
+nde-main-menu nav .main-menu-container.horizontal-menu {
+    justify-content: center;
+}
+
+/* Suppress uppercase titles */
+nde-main-menu nav .main-menu-container ul li .main-menu-label .mdc-button__label .ng-star-inserted,
+nde-main-menu-dialog .show-more-main-menu-out-inner-wrapper ul li .main-menu-modal-btn .mat-title-small,
+nde-main-menu nav .main-menu-container ul li .show-more-btn .mdc-button__label {
+    text-transform: none;
+}
+
+/* END NDE-MAIN-MENU CONFIG */
+
+/* SEARCH BAR CONFIG */
+
+/* Border color */
+nde-search-bar-container nde-search-bar-presenter nde-tabs-and-scopes-dropdown nde-search-contain-dropdown .search-dropdown-container-button:not(.dropdown-active-button),
+nde-search-bar-container nde-search-bar-presenter .search-bar-container .search-bar-wrapper:not(.search-bar-wrapper:focus-within) {
+    border-color: #a98e7e !important;
+}
+
+/* END SEARCH BAR CONFIG */
+
+/* FOOTER CONFIG */
+
+nde-footer footer {
+    padding: 80px;
+    background-color: var(--sys-primary);
+}
+
+nde-footer footer div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nde-footer footer div ul li a {
+    color: white;
+}
+
+nde-footer footer div ul li img {
+    max-width: 200px;
+    min-width: 100px;
+}
+
+/* END FOOTER CONFIG */
+
+/* RESULTS PAGES CONFIG */
+
+/* Rapido bar */
+nde-rapido-links .nde-rapido-links-main-content {
+    background-color: rgba(202, 182, 157, 0.1) !important;
+}
+
+/* Results container */
+/* background and border color */
+nde-search-results-top-bar #resultsTopBarContainer {
+    background-color: #EFE8E1;
+}
+
+nde-search-results-top-bar #resultsTopBarContainer,
+nde-search-results #searchResults {
+    border-color: #a98e7e;
+}
+
+nde-search-results nde-search-result-item-container .record-number {
+    background-color: rgba(202, 182, 157, 0.3) !important;
+}
+
+/* Facets Menu */
+nde-search-filters-side-nav .side-nav-filters-actions {
+    padding: 1rem 0 !important;
+}
+
+/* Pagination search results */
+nde-search-results-pagination nav .pagination-container {
+    border-color: #a98e7e !important;
+}
+
+/* No Results page config */
+nde-search-results nde-search-no-results .no-results {
+    flex-wrap: wrap;
+}
+
+/* END RESULTS PAGE CONFIG */
+
+/* FULL DISPLAY PAGE CONFIG */
+
+/* Hide full-view-right-content */
+nde-full-display-container .full-view-right-content {
+    display: none;
+}
+
+/* Brief display */
+nde-full-display-container nde-search-result-item-container .brief-result-container nde-record-title h3 a span {
+    font-weight: 600;
+}
+
+
+/* View It and Location tile config */
+/* background and border color */
+nde-full-display-service-container nde-view-it nde-view-it-card .view-it-card-container,
+nde-locations-container nde-location .getit-location-card {
+    background-color: white !important;
+    border: solid 2px #a98e7e;
+}
+
+nde-locations-container nde-location nde-location-items-container .not-grouped-by-library {
+    border-color: #a98e7e !important;
+}
+
+nde-locations-container nde-location nde-location-items-container .getit-location-items-filter-bar {
+    background-color: rgba(202, 182, 157, 0.3) !important;
+}
+
+nde-locations-container nde-location nde-location-items-container nde-location-item .even-location-item-card {
+    background-color: rgba(202, 182, 157, 0.15) !important;
+}
+
+/* availability and call number color and weight */
+nde-locations-container nde-location .location-brief-properties-container .getit-location-available,
+nde-locations-container nde-location .location-brief-properties-container .getit-location-unavailable,
+nde-locations-container nde-location .location-brief-properties-container span[data-qa="location-call-number"] {
+    font-weight: 600;
+}
+
+nde-locations-container nde-location .location-brief-properties-container span[data-qa="location-call-number"] {
+    color: #C40049;
+}
+
+/* text alignment */
+nde-locations-container nde-location nde-location-items-container nde-location-item .getit-items-brief-property:not(:first-of-type) {
+    text-align: end;
+    font-style: italic;
+}
+
+nde-locations-container nde-location nde-location-items-container nde-location-item .getit-items-full-properties-container {
+    padding-left: 24px !important;
+}
+
+nde-locations-container nde-location nde-location-items-container nde-location-item .mat-expansion-panel-header {
+    padding: 10px 24px !important;
+}
+
+nde-locations-container nde-location nde-location-items-container nde-location-item .mat-expansion-panel-body {
+    padding-bottom: 0 !important;
+}
+
+nde-full-display-service-container nde-view-it nde-view-it-card .view-it-card-container button{
+    padding-left: 0 !important;
+    color: var(--sys-primary)
+}
+
+/* Request button */
+nde-get-it nde-locations-container nde-location nde-location-items-requests button {
+    background-color: var(--sys-primary) !important;
+    color: white !important;
+    width: 10.25rem;
+}
+
+nde-get-it nde-locations-container nde-location nde-location-items-requests div {
+    margin: 16px 0 0 0 !important;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* Requests tile config and font size */
+/* Login bar background color */
+nde-full-display-service-container nde-requests nde-notification .notification-container {
+    background-color: rgba(202, 182, 157, 0.5);
+}
+
+nde-full-display-service-container nde-requests nde-notification .notification-container #notifText,
+nde-full-display-service-container nde-requests nde-notification .notification-container nde-login div a {
+    font-size: 1rem !important;
+}
+
+/* Rapido bar background color */
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location nde-ngrs-no-offer-message .nde-ngrs-no-offer-message-main-tile {
+    background-color: rgba(202, 182, 157, 0.2) !important;
+}
+
+/* Request card background and border color */
+nde-full-display-service-container nde-requests nde-request-card .request-card {
+    border: solid 2px #a98e7e;
+    background-color: rgba(202, 182, 157, 0.15) !important;
+}
+
+/* Rapido card background and border color */
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location .nde-ngrs-get-it-other-location-one-offer {
+    border: solid 1px rgba(169, 142, 126, 0.5);
+    background-color: rgba(202, 182, 157, 0.1) !important;
+}
+
+nde-full-display-service-container nde-requests nde-ngrs-get-it-other-location .nde-ngrs-get-it-other-location-one-offer a {
+    color: var(--sys-primary);
+} 
+
+/* Browseshelf config */
+
+/* border color */
+nde-full-display-service-container nde-virtual-browse nde-carousel cdk-virtual-scroll-viewport nde-virtual-browse-card mat-card:not(.focused) {
+    border-color: #a98e7e;
+}
+
+/* links color */
+nde-full-display-service-container nde-virtual-browse nde-carousel cdk-virtual-scroll-viewport a {
+    color: var(--sys-primary);
+}
+
+/* Alma Digital config. */
+
+/* border */
+nde-full-display-container nde-alma-d-viewer .mirador-workspace-viewport {
+    border: solid 2px #a98e7e;
+}
+
+nde-full-display-container nde-alma-d-viewer .mirador-workspace-viewport .MuiDrawer-paperAnchorDockedLeft,
+nde-full-display-container nde-alma-d-viewer .mirador-workspace-viewport .mirador-companion-window-left {
+    border-right: solid 2px #a98e7e;
+}
+
+/* END FULL DISPLAY PAGE CONFIG */
+
+/* SELECTIONS THEMATHIQUES CONFIG */
+
+/* General config */
+
+nde-collection-discovery-gallery nde-collection-discovery-grid nde-collection-discovery-gallery-collection .collection-grid-card .collection-header .collection-title {
+    word-break: normal !important;
+}
+
+nde-collection-discovery-grid nde-collection-discovery-gallery-collection .collection-grid-card.sub-collection,
+nde-collection-discovery-grid nde-collection-discovery-gallery-item .item-grid-card,
+nde-collection-discovery-list .collection-discovery-list {
+    border: solid 2px #a98e7e !important;
+}
+
+nde-collection-discovery-list .collection-list-top-bar-container {
+    border: solid 2px #a98e7e !important;
+    border-bottom: solid 0 !important;
+    background-color: #EFE8E1 !important;
+}
+
+nde-collection-discovery-grid nde-collection-discovery-gallery-collection .collection-grid-card.sub-collection,
+nde-collection-discovery-list nde-collection-discovery-gallery-collection .collection-list-card {
+    background-color: white !important;
+}
+
+nde-collection-discovery-gallery .load-more-btn {
+    background-color: var(--sys-primary) !important;
+    color: white !important;
+    width: 10.25rem;
+}
+
+/* END SELECTIONS THEMATIQUES CONFIG */
+
+/* ACCOUNT CONFIG */
+/* Border and background colors */
+
+nde-account-overview mat-card,
+nde-account nde-account-section-results .account-section-top-bar-container,
+nde-account nde-account-section-results .account-section-results-container,
+nde-account nde-favoritesapp .account-section-top-bar-container,
+nde-account nde-favoritesapp .account-section-results-container,
+nde-account nde-personal-info nde-personal-settings .personal-settings-card,
+nde-account nde-personal-info nde-personal-details nde-personal-details-info nde-personal-details-view .personal-details-card {
+    border: solid 2px #a98e7e !important;
+}
+
+nde-account nde-account-section-results .account-section-top-bar-container,
+nde-account nde-favoritesapp .account-section-top-bar-container {
+    border-bottom: 0 !important;
+    background-color: #EFE8E1 !important;
+}
+
+/* _____________________________________________________________________________________________________________________ */
+
+/* SP CUSTOM PACKAGE */
+
+/* SP RESULTS PAGE CONFIG */
+/* Facets config */
+/* hide DGEP libraries */
+
+/* Gymnase de Burier */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–16510495310002852"]),
+/* Gymnase de Morges-Marcelin */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–18514200390002852"]),
+/* Gymnase de Auguste Piccard */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–18928031620002852"]),
+/* Gymnase d'Yverdon */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–18533890480002852"]),
+/* Gymnase de Nyon */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–18526630810002852"]),
+/* Gymnase de Beaulieu */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–17415646180002852"]),
+/* Gymnase du Bugnon - Ours */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–16409679460002852"]),
+/* Gymnase de la Cité */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–17415638260002852"]),
+/* Gymnase de Chamblandes */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–18927891860002852"]),
+/* EPSIC-ERACOM */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–385329840002852"]),
+/* Gymnases du Bugnon - Sévelin */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–16408993200002852"]),
+/* CPNV */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–21281404830002852"]),
+/* CEPV */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–385327170002852"]), 
+/* Gymnase de Bussigny */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–20620069350002852"]),
+/* Gymnase d'Etoy */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–25645928290002852"]),
+/* ESSC */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–17152964260002852"]),
+/* ETML */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–385330810002852"]),
+/* ARPI */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–15284798370002852"]),
+/* EPM */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–385329500002852"]),
+/* ESSanté */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–21281421060002852"]),
+/* ETVJ */
+nde-search-results-container nde-search-filters-side-nav nde-filters-group#library nde-filters-value:has(button[data-qa="library.2852–19026955350002852"]) {
+    display: none;
+}
+
+/* ELP FULL DISPLAY CONFIG */
+
+/* Get-it-from-other config */
+
+nde-get-it-from-other nde-get-it-other-institution .getit-library-card {
+    background-color: white !important;
+}
+
+nde-get-it-from-other nde-get-it-other-institution .getit-library-card,
+nde-get-it-from-other nde-get-it-other-institution nde-locations-container .getit-location-card {
+    border: solid 2px #a98e7e;
+}
+
+nde-get-it-from-other nde-get-it-other-institution nde-locations-container .getit-location-card .other-location-available {
+    font-weight: 600;
+}
+
+/* END ELP FULL DISPLAY CONFIG */

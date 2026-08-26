@@ -1,0 +1,33 @@
+/* ============================================================
+   FACETS — Side-nav filters: memorize-filters toggle styling,
+   item-count alignment.
+   ============================================================ */
+/* FACETS CONFIG */
+
+/* Memorize filters toogle color */
+nde-search-results-container nde-search-filters-side-nav mat-slide-toggle button .mdc-switch__track::before,
+nde-search-results-container nde-search-filters-side-nav mat-slide-toggle button:hover .mdc-switch__track::before,
+nde-search-results-container nde-search-filters-side-nav mat-slide-toggle button:focus .mdc-switch__track::before,
+nde-search-results-container nde-search-filters-side-nav mat-slide-toggle button:active .mdc-switch__track::before {
+    background-color: #fff !important;
+}
+nde-search-results-container nde-search-filters-side-nav mat-slide-toggle button .mdc-switch__track::before {
+    border-color: var(--color-beige-fonce);
+}
+nde-search-results-container nde-search-filters-side-nav mat-slide-toggle button .mdc-switch__handle::after {
+    background: var(--color-beige-fonce) !important;
+}
+nde-search-results-container nde-search-filters-side-nav mat-slide-toggle button .mdc-switch__handle .mdc-switch__icons svg {
+    fill: #fff !important;
+}
+nde-search-results-container nde-search-filters-side-nav mat-slide-toggle.mat-mdc-slide-toggle-checked button .mdc-switch__handle .mdc-switch__icons svg {
+    fill: var(--sys-primary) !important;
+}
+nde-search-results-container nde-search-filters-side-nav mat-slide-toggle.mat-mdc-slide-toggle-checked button .mdc-switch__handle::after {
+    background: #fff !important;
+}
+
+/* Align item counts to the right */
+.filter-checkbox.mat-mdc-checkbox .mdc-label div {
+    width: 100%;
+}

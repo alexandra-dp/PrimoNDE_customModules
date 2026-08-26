@@ -1,0 +1,31 @@
+/* ============================================================
+   ACCOUNT — User area: overview, settings, personal details,
+   section cards and top bars.
+   ============================================================ */
+/* ACCOUNT CONFIG */
+/* Initials order in menu */
+.user-area .user-area-logged-in span {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	display: inline-block !important;
+	line-height: 24px;
+}
+
+
+
+/* Border and background colors */
+nde-account-overview mat-card,
+nde-account nde-account-section-results .account-section-top-bar-container,
+nde-account nde-account-section-results .account-section-results-container,
+nde-account nde-favoritesapp .account-section-top-bar-container,
+nde-account nde-favoritesapp .account-section-results-container,
+nde-account nde-personal-info nde-personal-settings .personal-settings-card,
+nde-account nde-personal-info nde-personal-details nde-personal-details-info nde-personal-details-view .personal-details-card {
+    border: var(--border-card) !important;
+}
+
+nde-account nde-account-section-results .account-section-top-bar-container,
+nde-account nde-favoritesapp .account-section-top-bar-container {
+    border-bottom: 0 !important;
+    background-color: var(--color-section-header-bg) !important;
+}

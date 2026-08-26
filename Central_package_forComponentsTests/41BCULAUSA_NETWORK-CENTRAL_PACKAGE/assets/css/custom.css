@@ -1,0 +1,22 @@
+/* ============================================================
+   CUSTOM — Entry point (imports only, no rules of its own)
+   41BCULAUSA light-theme package. Conventions: see README.md
+   Load order matters: _variables first, modules after.
+   ============================================================ */
+
+/* Imports files */
+/* Dark mode WIP — when enabled, import LAST so it overrides all other modules */
+/* @import "_darkmode.css"; */
+@import "_variables.css";
+@import "_general.css";
+@import "_mainmenu.css";
+@import "_searchbar.css";
+@import "_homepage.css";
+@import "_account.css";
+@import "_briefdisplay.css";
+@import "_resultspage.css";
+@import "_facets.css";
+@import "_fulldisplay.css";
+@import "_collections.css";
+@import "_footer.css";
+@import "_overlay.css";

@@ -1,0 +1,79 @@
+/* ============================================================
+   COLLECTIONS — Thematic collections gallery: grid & list
+   modes, cards, thumbnails, load-more button.
+   ============================================================ */
+/* SELECTIONS THEMATHIQUES CONFIG */
+/* General config */
+
+nde-collection-discovery-gallery nde-collection-discovery-grid nde-collection-discovery-gallery-collection .collection-grid-card .collection-header .collection-title {
+    word-break: normal !important;
+}
+
+nde-collection-discovery-grid nde-collection-discovery-gallery-collection .collection-grid-card.sub-collection,
+nde-collection-discovery-grid nde-collection-discovery-gallery-item .item-grid-card,
+nde-collection-discovery-list .collection-discovery-list {
+    border: var(--border-card) !important;
+}
+
+nde-collection-discovery-list .collection-list-top-bar-container {
+    border: var(--border-card) !important;
+    border-bottom: solid 0 !important;
+    background-color: var(--color-section-header-bg) !important;
+}
+
+nde-collection-discovery-grid nde-collection-discovery-gallery-collection .collection-grid-card.sub-collection,
+nde-collection-discovery-list nde-collection-discovery-gallery-collection .collection-list-card {
+    background-color: #fff !important;
+}
+
+nde-collection-discovery-gallery .load-more-btn {
+    background-color: var(--sys-primary) !important;
+    color: #fff !important;
+    width: var(--btn-width);
+}
+
+/* Grid mode config */
+nde-collection-discovery-grid nde-collection-discovery-gallery-item {
+    min-height: 400px;
+    max-height: 800px;
+}
+
+nde-collection-discovery-grid nde-collection-discovery-gallery-item .item-grid-card {
+    justify-content: space-between;
+    height: 100% !important;
+}
+
+nde-collection-discovery-grid nde-collection-discovery-gallery-item .item-grid-card nde-collection-discovery-item-thumbnail .grid-thumbnail-container {
+    height: 100%;
+}
+
+nde-collection-discovery-grid nde-collection-discovery-gallery-item .item-grid-card nde-collection-discovery-item-thumbnail .grid-thumbnail-container img {
+    width: auto;
+    max-height: 300px;
+}
+
+/* List mode config */
+nde-collection-discovery-list nde-collection-discovery-gallery-item .item-list-card,
+nde-collection-discovery-list nde-collection-discovery-gallery-item .thumbnail-container {
+    height: auto !important;
+    align-items: flex-start !important;
+}
+
+nde-collection-discovery-list nde-collection-discovery-gallery-item .item-list-card nde-collection-discovery-item-thumbnail {
+    height: auto !important;
+}
+
+
+nde-collection-discovery-list nde-collection-discovery-gallery-item .item-list-card nde-collection-discovery-item-thumbnail .list-thumbnail-container {
+    width: 200px;
+    max-width: 200px;
+    height: auto;
+}
+
+nde-collection-discovery-list nde-collection-discovery-gallery-item .item-list-card .content {
+    justify-content: end;
+}
+
+nde-collection-discovery-list nde-collection-discovery-gallery-item .item-list-card .content h3 {
+    font-size: var(--font-size-xl);
+}

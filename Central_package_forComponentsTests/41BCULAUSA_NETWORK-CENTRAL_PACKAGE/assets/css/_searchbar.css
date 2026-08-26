@@ -1,0 +1,123 @@
+/* ============================================================
+   SEARCH BAR — Homepage search bar, scope dropdown, sizing.
+   ============================================================ */
+/* SEARCH BAR CONFIG */
+/* ── Layout vertical de la zone image ──────────────────────
+   La zone image est rendue en flex-column : le bloc titre/desc
+   reste en haut, la barre de recherche est poussée vers le bas
+   via margin-top: auto sur nde-top-bar.
+   Ajuster min-height et padding-bottom pour calibrer la hauteur.
+   ─────────────────────────────────────────────────────────── */
+.search-container .top-bar-background-image {
+    display: flex;
+    flex-direction: column;
+    /* min-height géré vue par vue dans le custom package de chaque vue */
+}
+
+/* Espace entre le bloc titre/desc/bouton et la barre de recherche */
+.search-container .top-bar-background-image nde-top-bar {
+    margin-top: clamp(24px, 4vh, 56px);
+}
+
+/* Espacement et padding dans le bloc titre/description/bouton */
+.search-container .custom-search-bar-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: clamp(32px, 8vh, 100px);
+    gap: 20px;
+}
+
+/* Color overlay */
+.search-container .custom-search-bar-container .background-overlay {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.8) 0%, rgba(171, 171, 171, 0.4) 100%) !important;
+}
+
+/* Title and description position */
+.search-container .custom-search-bar-container h1,
+.search-container .custom-search-bar-container #rnv-search-desc,
+.search-container .custom-search-bar-container #rnv-search-desc p {
+    width: var(--width-content);
+    align-items: start !important;
+}
+
+/* Title size */
+.search-container .custom-search-bar-container h1 {
+    font-size: 3rem !important;
+}
+
+/* Description size and color */
+.search-container .custom-search-bar-container #rnv-search-desc {
+    z-index: 10;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.search-container .custom-search-bar-container #rnv-search-desc p {
+    width: 45vw;
+}
+
+/* Bouton "Find out more" — alignement sur la même marge gauche que le titre.
+   Le conteneur parent centre ses enfants (align-items: center) ; ce margin-left
+   reproduit le décalage d'un élément de largeur --width-content centré. */
+.search-container .custom-search-bar-container #rnv-search-btn {
+    z-index: 10;
+    margin-left: calc((100% - var(--width-content)) / 2);
+}
+
+
+/* search bar position */
+nde-search-bar-container nde-search-bar-presenter .search-bar-container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+}
+
+
+/* Search bar height */
+nde-search-bar-container nde-search-bar-presenter nde-tabs-and-scopes-dropdown nde-search-contain-dropdown .search-dropdown-container-button,
+nde-search-bar-container nde-search-bar-presenter .search-bar-container .search-bar-wrapper,
+nde-search-bar-container nde-search-bar-presenter .search-bar-container .advanced-search-button {
+    height: 50px;
+}
+
+nde-search-bar-container nde-search-bar-presenter .search-bar-container .search-bar-wrapper .search_box_container {
+    height: 100%;
+}
+
+/* search bar font size */
+nde-search-bar-container nde-search-bar-presenter nde-tabs-and-scopes-dropdown nde-search-contain-dropdown .search-dropdown-container-button .search-dropdown-container-button-text,
+nde-search-bar-container nde-search-bar-presenter .search-bar-container .search-bar-wrapper .search_box_container input,
+nde-search-bar-container nde-search-bar-presenter .search-bar-container .advanced-search-button span,
+.cdk-overlay-container .cdk-overlay-pane .options-container button span {
+    font-size: 1.1rem !important;
+}
+
+/* Border color */
+nde-search-bar-container nde-search-bar-presenter nde-tabs-and-scopes-dropdown nde-search-contain-dropdown .search-dropdown-container-button:not(.dropdown-active-button),
+nde-search-bar-container nde-search-bar-presenter .search-bar-container .search-bar-wrapper:not(.search-bar-wrapper:focus-within) {
+    border-color: var(--color-beige-fonce) !important;
+}
+
+/* Scope menu size */
+.cdk-overlay-container .cdk-overlay-pane .options-container {
+    max-height: 100% !important;
+}
+
+.cdk-overlay-container .cdk-overlay-pane .options-container:has(button:nth-child(n+6)) {
+    max-height: 216px !important;
+}
+
+/* scope menu border radius and width */
+nde-search-bar-container nde-search-bar-presenter nde-tabs-and-scopes-dropdown nde-search-contain-dropdown .search-dropdown-container-button {
+    border-radius: var(--radius-scope) !important;
+    min-width: 200px !important;
+    width: auto !important;
+}
+
+nde-search-bar-container nde-search-bar-presenter nde-tabs-and-scopes-dropdown nde-search-contain-dropdown .search-dropdown-container-button .mdc-button__label {
+    text-overflow: unset !important;
+}
+
+/* search buttons color */
+nde-search-bar-presenter .search-bar-wrapper button mat-icon svg path {
+    fill: var(--sys-primary) !important;
+}

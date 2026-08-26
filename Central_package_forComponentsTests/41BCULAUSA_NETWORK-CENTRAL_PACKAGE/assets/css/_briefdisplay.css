@@ -1,0 +1,52 @@
+/* ============================================================
+   BRIEF DISPLAY — Result list item: title, main details,
+   summary, Open Access indicator, availability pills.
+   ============================================================ */
+/* BRIEF DISPLAY CONFIG */
+/* Font, padding, margin config */
+nde-record-title {
+    padding: 5px;
+}
+
+nde-record-title h3 a nde-highlight span {
+    font-size: var(--font-size-base) !important;
+}
+
+nde-record-main-details {
+    margin: 20px 0;
+}
+
+nde-record-summary {
+    margin-bottom: 20px;
+}
+
+/* Open Access logo color */
+nde-record-indications mat-icon[data-mat-icon-name="Open-Access-Indicator"] svg g path {
+	fill: var(--color-open-access) !important;
+}
+
+/* Availability colors and style */
+nde-record-availability nde-physical-availability-line .availability-status {
+    border-radius: var(--radius-pill);
+    padding: 5px 10px;
+}
+
+nde-record-availability nde-physical-availability-line .availability-status:has(mat-icon[data-mat-icon-name="Available-record-indicator"]) {
+    background-color: var(--color-available-bg);
+}
+
+nde-record-availability nde-physical-availability-line .availability-status:has(mat-icon[data-mat-icon-name="Unavailable-record-indicator"]) {
+    background-color: var(--color-unavailable-bg);
+}
+
+nde-record-availability nde-physical-availability-line .availability-status:has(mat-icon[data-mat-icon-name="Available-record-indicator"]) button {
+    color: var(--color-available) !important;
+}
+
+nde-record-availability nde-physical-availability-line .availability-status mat-icon[data-mat-icon-name="Unavailable-record-indicator"] svg circle {
+    fill: var(--color-unavailable) !important;
+}
+
+nde-record-availability nde-physical-availability-line .availability-status:has(mat-icon[data-mat-icon-name="Unavailable-record-indicator"]) button {
+    color: var(--color-unavailable) !important;
+}

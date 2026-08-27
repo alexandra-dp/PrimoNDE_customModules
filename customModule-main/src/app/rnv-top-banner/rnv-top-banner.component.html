@@ -1,3 +1,4 @@
-<div class="rnv-top-banner"><p>This is the new Beta version of your library catalogue. You may experience a few bugs. </p>
-<p><a href="https://coordrnv.typeform.com/to/KWbWOO9i" target=_blank>Your feedback</a> will help us to improve it!</p>
-<p><b> Please note this interface is not yet adapted to mobile devices.</b></p></div>
+<div class="rnv-top-banner">
+    <div>{{ labels.intro }} <b>{{ labels.mobileNotice }}</b></div>
+    <div><a href="https://coordrnv.typeform.com/to/KWbWOO9i" target="_blank">{{ labels.feedbackLinkText }}</a>{{ labels.afterFeedback }} {{ labels.goBackPrefix }}<a [href]="catalogUrl">{{ labels.catalogLinkText }}</a></div>
+</div>
